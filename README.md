@@ -5,7 +5,7 @@ This project is a collaboration between the participants in Linguistics 222 at U
 
 This project is a modest extension of a project by Richard Futrell, Roger Levy, and Matthew Dryer. 
 
-The R code in the project is theirs, and all of the coding for variables outside of the file Berkeley.csv is theirs as well; we have added a new way of coding the frequency distribution of U20 variables and modified the code to run poisson regression on those variables alongside the others.
+The R code in the project is theirs, and all of the coding for variables outside of the file Berkeley.csv is theirs as well; we have added a new way of coding the frequency distribution of U20 variables (Berkeley.csv) and modified the code to run poisson regression on those variables alongside the original set.
 
 The original project by Futrell, Levy, and Dryer is at: https://github.com/Futrell/nporder
 
