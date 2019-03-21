@@ -138,7 +138,7 @@ berkeley_model = glm(rounded_adjusted_frequency ~
                        con_branch +
                        no_move +
                        peripheral+
-                       na_order,
+                       na_order2,
                    family="poisson",
                    data=d)
 
@@ -239,7 +239,7 @@ berkeley_model_genera = glm(genera ~
                        con_branch +
                        no_move +
                        peripheral+
-                       na_order,
+                       na_order2,
                    family="poisson",
                    data=d)
 
