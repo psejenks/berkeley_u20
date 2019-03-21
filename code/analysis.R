@@ -16,7 +16,7 @@ cinque = read_csv("../data/cinque_merlo.csv") %>%
 cinque2 = read_csv("../data/cinque_levy.csv") %>% select(-X1, -Notes)
 cinque3 = read_csv("../data/cinque_cysouw.csv") %>% select(-X1)
 cysouw = read_csv("../data/cysouw.csv")  
-berkeley = read_csv("../data/berkeley.csv") 
+berkeley = read_csv("../data/berkeley.csv") %>% select(-X1)
 
 if (markedness_sign_convention) {
     cysouw = cysouw %>%
