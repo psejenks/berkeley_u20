@@ -366,7 +366,7 @@ ggsave("../output/model_discrepancies_chisq.pdf", width=10, height=5)
 
 d_with_predictions %>%
     mutate(order=factor(order, levels=reorder(order, -d$genera))) %>%
-    select(order, genera, dryer_predicted_genera, cysouw_predicted_genera, cinque2_all_predicted_genera, berkeley_genera) %>%
+    select(order, genera, dryer_predicted_genera, cysouw_predicted_genera, cinque2_all_predicted_genera, berkeley_predicted_genera) %>%
     gather(key, frequency, -order) %>%
     mutate(key=factor(key, levels=c("genera", "dryer_predicted_genera", "cysouw_predicted_genera", "cinque2_all_predicted_genera", "berkeley_predicted_genera"))) %>%
     mutate(real=key == "genera") %>%
