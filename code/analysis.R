@@ -47,8 +47,8 @@ dryer_model = glm(rounded_adjusted_frequency ~
                       icon1 +
                       icon2 +
                       asym +
-                      harmony +
-                      nadj,
+                      harmony:nadj +
+                      harmony,
                   family="poisson",
                   data=d)
 
@@ -135,8 +135,8 @@ cysouw_model = glm(rounded_adjusted_frequency ~
 
 berkeley_model = glm(rounded_adjusted_frequency ~
                       u20 +
+                      con_branch:no_move +
                       con_branch +
-                      no_move +
                       dfirst +
                       na_order2,
                    family="poisson",
@@ -147,8 +147,8 @@ dryer_model_genera = glm(genera ~
                       icon1 +
                       icon2 +
                       asym +
-                      harmony +
-                      nadj,
+                      harmony:nadj +
+                      harmony,
                   family="poisson",
                   data=d)
 
@@ -236,8 +236,8 @@ cysouw_model_genera = glm(genera ~
 
 berkeley_model_genera = glm(genera ~
                       u20 +
+                      con_branch:no_move +
                       con_branch +
-                      no_move +
                       dfirst +
                       na_order2,
                    family="poisson",
