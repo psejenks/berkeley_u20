@@ -134,11 +134,11 @@ cysouw_model = glm(rounded_adjusted_frequency ~
                    data=d)
 
 berkeley_model = glm(rounded_adjusted_frequency ~
-                       u20 +
-                       con_branch +
-                       no_move +
-                       peripheral+
-                       na_order2,
+                      u20 +
+                      con_branch +
+                      no_move +
+                      dfirst +
+                      na_order2,
                    family="poisson",
                    data=d)
 
@@ -235,11 +235,11 @@ cysouw_model_genera = glm(genera ~
 
 
 berkeley_model_genera = glm(genera ~
-                       u20 +
-                       con_branch +
-                       no_move +
-                       peripheral+
-                       na_order2,
+                      u20 +
+                      con_branch +
+                      no_move +
+                      dfirst +
+                      na_order2,
                    family="poisson",
                    data=d)
 
